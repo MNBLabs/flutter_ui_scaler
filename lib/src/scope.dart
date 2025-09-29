@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_scaler/src/design_scale.dart';
+import 'design_scale.dart';
 
 /// App-wide provider for [DesignScale]. Wrap your app once.
+///
+/// Example:
+/// ```dart
+/// UiScaleScope(
+///   figmaW: 440, figmaH: 956,
+///   child: MaterialApp(...),
+/// )
+/// ```
 class UiScaleScope extends InheritedWidget {
   /// Creates a scope providing a [DesignScale] configuration.
   const UiScaleScope({
@@ -14,22 +22,22 @@ class UiScaleScope extends InheritedWidget {
     required super.child,
   });
 
-  /// Figma base frame width/height used in your design.
+  /// Design frame width/height used by your layouts.
   final double figmaW, figmaH;
 
-  /// Global clamps for the scale.
+  /// Global clamps for scale.
   final double minScale, maxScale;
 
-  /// If true, fonts follow base [DesignScale.scale] in landscape.
+  /// If true, fonts use base scale in landscape.
   final bool tightFontsInLandscape;
 
   @override
-  bool updateShouldNotify(UiScaleScope old) =>
-      figmaW != old.figmaW ||
-      figmaH != old.figmaH ||
-      minScale != old.minScale ||
-      maxScale != old.maxScale ||
-      tightFontsInLandscape != old.tightFontsInLandscape;
+  bool updateShouldNotify(covariant UiScaleScope oldWidget) =>
+      figmaW != oldWidget.figmaW ||
+      figmaH != oldWidget.figmaH ||
+      minScale != oldWidget.minScale ||
+      maxScale != oldWidget.maxScale ||
+      tightFontsInLandscape != oldWidget.tightFontsInLandscape;
 
   /// Resolve a [DesignScale] bound to the current [BuildContext].
   static DesignScale of(BuildContext context) {
@@ -49,7 +57,7 @@ class UiScaleScope extends InheritedWidget {
   }
 }
 
-/// Sugar: `context.ds` → `DesignScale`.
+/// Sugar: `context.ds` → [DesignScale].
 extension UiScaleBuildContextX on BuildContext {
   /// Convenience getter for [DesignScale] from [UiScaleScope].
   DesignScale get ds => UiScaleScope.of(this);
