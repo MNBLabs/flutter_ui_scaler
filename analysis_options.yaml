@@ -1,5 +1,11 @@
 include: package:flutter_lints/flutter.yaml
 
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "bin/**" # exclude CLI from doc rules
+    - "example/**" # exclude example app files from strict lints
+
 linter:
   rules:
     public_member_api_docs: true
