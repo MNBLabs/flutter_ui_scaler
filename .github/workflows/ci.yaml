@@ -21,6 +21,10 @@ jobs:
       - name: Flutter pub get
         run: flutter pub get
 
+      - name: Flutter pub get (example)
+        working-directory: example
+        run: flutter pub get
+
       - name: Format check
         run: dart format --output=none --set-exit-if-changed .
 

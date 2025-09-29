@@ -1,0 +1,11 @@
+name: flutter_ui_scaler_example
+publish_to: "none"
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_ui_scaler:
+    path: ../
