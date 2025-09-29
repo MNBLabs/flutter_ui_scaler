@@ -1,0 +1,28 @@
+name: flutter_ui_scaler
+description: >
+  Flutter UI scaler that matches a Figma frame across devices and orientations.
+  Orientation-aware size/font scaling with sensible clamps.
+version: 0.1.0
+repository: https://github.com/MNBLabs/flutter_ui_scaler
+issue_tracker: https://github.com/MNBLabs/flutter_ui_scaler/issues
+topics: [flutter, responsive, layout, scaling, typography]
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  meta: ^1.12.0
+  # CLI uses args → must be a regular dependency because we expose an executable.
+  args: ^2.5.0
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+  flutter_test:
+    sdk: flutter
+
+# Publish a CLI binary called `flutter_ui_scaler`
+executables:
+  flutter_ui_scaler: flutter_ui_scaler
