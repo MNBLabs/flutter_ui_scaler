@@ -1,6 +1,9 @@
 include: package:flutter_lints/flutter.yaml
 
 analyzer:
+  errors:
+    public_member_api_docs: ignore
+    always_use_package_imports: ignore
   exclude:
     - "**/*.g.dart"
     - "bin/**" # exclude CLI from doc rules
