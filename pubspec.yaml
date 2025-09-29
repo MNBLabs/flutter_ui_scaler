@@ -1,6 +1,6 @@
 name: flutter_ui_scaler
 description: Accurate, orientation-aware scaling for Flutter that keeps your UI pixel-perfect across devices.
-version: 0.1.1
+version: 0.1.2
 
 repository: https://github.com/MNBLabs/flutter_ui_scaler
 issue_tracker: https://github.com/MNBLabs/flutter_ui_scaler/issues

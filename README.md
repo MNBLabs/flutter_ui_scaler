@@ -4,8 +4,9 @@
 ![points](https://img.shields.io/pub/points/flutter_ui_scaler?cacheSeconds=600)
 ![CI](https://github.com/MNBLabs/flutter_ui_scaler/actions/workflows/ci.yaml/badge.svg)
 ![License](https://img.shields.io/github/license/MNBLabs/flutter_ui_scaler)
-Accurate, orientation-aware scaling for Flutter that keeps your UI **pixel-perfect across devices**.  
-🎯 Match your Figma (or any design tool) frame exactly on phones and tablets.
+
+Achieve **pixel-perfect scaling** for your Flutter UI with ease.  
+🎯 Ensure your designs look consistent and accurate across devices, whether on phones or tablets, in portrait or landscape orientation.
 
 ---
 

@@ -1,3 +1,7 @@
+## 0.1.2
+
+- Enhanced documentation: refined README, updated badges, and improved `pubspec.yaml`.
+
 ## 0.1.1
 
 - Readme polish, CI badges, assets.
