@@ -1,3 +1,7 @@
+## 0.1.1
+
+- Readme polish, CI badges, assets.
+
 ## 0.1.0
 
 - Initial release: orientation-aware scaling, font strategy, clamps.
