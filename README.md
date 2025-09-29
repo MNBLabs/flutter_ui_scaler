@@ -1,9 +1,9 @@
 # flutter_ui_scaler
 
-[![pub](https://img.shields.io/pub/v/flutter_ui_scaler.svg)](https://pub.dev/packages/flutter_ui_scaler)
-[![pub points](https://img.shields.io/pub/points/flutter_ui_scaler)](https://pub.dev/packages/flutter_ui_scaler/score)
-[![CI](https://github.com/MNBLabs/flutter_ui_scaler/actions/workflows/ci.yaml/badge.svg)](https://github.com/MNBLabs/flutter_ui_scaler/actions)
-
+![pub](https://img.shields.io/pub/v/flutter_ui_scaler)  
+![points](https://img.shields.io/pub/points/flutter_ui_scaler?cacheSeconds=600)
+![CI](https://github.com/MNBLabs/flutter_ui_scaler/actions/workflows/ci.yaml/badge.svg)
+![License](https://img.shields.io/github/license/MNBLabs/flutter_ui_scaler)
 Accurate, orientation-aware scaling for Flutter that keeps your UI **pixel-perfect across devices**.  
 🎯 Match your Figma (or any design tool) frame exactly on phones and tablets.
 
@@ -13,6 +13,7 @@ Accurate, orientation-aware scaling for Flutter that keeps your UI **pixel-perfe
 
 Flutter’s `MediaQuery` scaling is **not design-accurate**.  
 Different DPIs and aspect ratios distort layouts — especially in **landscape**, where text suddenly becomes huge.
+60px in figma is not 60px on device! Not with flutter natively.
 
 | Figma Design | With `flutter_ui_scaler` | Without (native scaling) |
 |---|---|---|
