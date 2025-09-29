@@ -4,27 +4,27 @@
 [![pub points](https://img.shields.io/pub/points/flutter_ui_scaler)](https://pub.dev/packages/flutter_ui_scaler/score)
 [![CI](https://github.com/MNBLabs/flutter_ui_scaler/actions/workflows/ci.yaml/badge.svg)](https://github.com/MNBLabs/flutter_ui_scaler/actions)
 
-Accurate, orientation-aware scaling for Flutter that keeps your UI **pixel-perfect across devices**.
+Accurate, orientation-aware scaling for Flutter that keeps your UI **pixel-perfect across devices**.  
 🎯 Match your Figma (or any design tool) frame exactly on phones and tablets.
 
 ---
 
-## ✨ Why This Plugin
+## ✨ Why Use This Plugin?
 
-Flutter’s `MediaQuery` scaling is **not design-accurate**.
+Flutter’s `MediaQuery` scaling is **not design-accurate**.  
 Different DPIs and aspect ratios distort layouts — especially in **landscape**, where text suddenly becomes huge.
 
-| Figma Frame                       | With `flutter_ui_scaler`        | Without (naïve scaling)         |
-| --------------------------------- | -------------------------------- | -------------------------------- |
-| ![Figma](assets/figma_design.png) | ![With](assets/with_plugin.png) | ![Without](assets/without_plugin.png) |
+| Figma Design | With `flutter_ui_scaler` | Without (native scaling) |
+|---|---|---|
+| <img src="https://raw.githubusercontent.com/MNBLabs/flutter_ui_scaler/main/assets/figma_design.png" height="520"/> | <img src="https://raw.githubusercontent.com/MNBLabs/flutter_ui_scaler/main/assets/with_plugin.png" height="520"/> | <img src="https://raw.githubusercontent.com/MNBLabs/flutter_ui_scaler/main/assets/without_plugin.png" height="520"/> |
 
 👉 Notice how proportions, text size, and padding stay **true to the design** with the plugin.
 
 ### Landscape Behaviour
 
-| With                                      | Without                                       |
-| ----------------------------------------- | --------------------------------------------- |
-| ![With Landscape](assets/landsp_with_plugin.png) | ![Without Landscape](assets/landsp_without_plugin.png) |
+| With | Without |
+|---|---|
+| <img src="https://raw.githubusercontent.com/MNBLabs/flutter_ui_scaler/main/assets/landsp_with_plugin.png" width="350"/> | <img src="https://raw.githubusercontent.com/MNBLabs/flutter_ui_scaler/main/assets/landsp_without_plugin.png" width="350"/> |
 
 ✅ Text scaling stays consistent  
 ❌ Native scaling causes bloated titles and mismatched spacing
